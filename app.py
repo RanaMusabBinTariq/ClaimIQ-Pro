@@ -389,13 +389,13 @@ elif page == "📤  Batch Upload":
         tmpl = pd.DataFrame([
             {"claim_type":"Emergency","diagnosis":"Sepsis","patient_age":68,"claim_amount_usd":18500,
              "days_since_submission":2,"has_prior_auth":1,"is_chronic":0,"missing_documents":0,
-             "is_readmission":1,"num_prev_claims":3,"comorbidities":2,"patient_gender":"Male","provider":"AXA Health"},
+             "is_readmission":1,"num_prev_claims":3,"comorbidities":2,"patient_gender":"Male","provider":"Insurance Company A"},
             {"claim_type":"Inpatient","diagnosis":"Hip Fracture","patient_age":79,"claim_amount_usd":32000,
              "days_since_submission":1,"has_prior_auth":1,"is_chronic":0,"missing_documents":0,
-             "is_readmission":0,"num_prev_claims":2,"comorbidities":3,"patient_gender":"Female","provider":"Bupa International"},
+             "is_readmission":0,"num_prev_claims":2,"comorbidities":3,"patient_gender":"Female","provider":"Insurance Company C"},
             {"claim_type":"Outpatient","diagnosis":"Routine Annual Exam","patient_age":35,"claim_amount_usd":180,
              "days_since_submission":5,"has_prior_auth":1,"is_chronic":0,"missing_documents":0,
-             "is_readmission":0,"num_prev_claims":1,"comorbidities":0,"patient_gender":"Female","provider":"Cigna Global"},
+             "is_readmission":0,"num_prev_claims":1,"comorbidities":0,"patient_gender":"Female","provider":"Insurance Company D"},
         ])
         st.dataframe(tmpl, use_container_width=True, hide_index=True)
         st.download_button("⬇️ Download template CSV", tmpl.to_csv(index=False).encode(),"claimiq_template.csv","text/csv")
@@ -442,7 +442,7 @@ elif page == "📤  Batch Upload":
                     "Yes" if int(row.get("missing_documents",0)) else "No",
                     bool(int(row.get("is_readmission",0))),
                     int(row.get("num_prev_claims",0)),int(row.get("comorbidities",0)),
-                    str(row.get("patient_gender","Male")),str(row.get("provider","AXA Health")))
+                    str(row.get("patient_gender","Male")),str(row.get("provider","Insurance Company A")))
                 if res:
                     scores.append(res["score"]); priorities.append(res["priority"])
                     recs.append(res["rec"]);      anoms.append(res["anom"])

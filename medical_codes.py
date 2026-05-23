@@ -215,7 +215,7 @@ SNOMED_FINDINGS = {
 CLAIM_TYPES = ["Inpatient", "Outpatient", "Emergency", "Pharmacy", "Maternity", "Day Surgery", "Rehabilitation", "Mental Health"]
 
 # ── Insurance providers ───────────────────────────────────────────────────────
-PROVIDERS = ["AllianzCare", "AXA Health", "Bupa International", "Cigna Global", "MetLife Health", "MedNet", "Daman Health", "GlobeMed"]
+PROVIDERS = ["Insurance Company A", "Insurance Company B", "Insurance Company C", "Insurance Company D", "Insurance Company E", "Insurance Company F", "Insurance Company G", "Insurance Company H"]
 
 # ── Rejection reasons ─────────────────────────────────────────────────────────
 REJECTION_REASONS = [

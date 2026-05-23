@@ -70,7 +70,7 @@ All codes are from **open / public-domain sources** — no licensing fees, no le
 - **14,000 claims** across 1,800 synthetic patients
 - **109 real ICD-10-CM diagnoses** across 12 clinical categories
 - **8 claim types:** Inpatient, Outpatient, Emergency, Pharmacy, Maternity, Day Surgery, Rehabilitation, Mental Health
-- **8 insurance providers** including AXA Health, Bupa, Cigna, MetLife, MedNet, Daman
+- **8 insurance providers** including 8 anonymised insurance providers (Insurance Company A through H)
 - **3 years** of data (2022–2024)
 
 ---
